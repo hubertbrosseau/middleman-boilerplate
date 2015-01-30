@@ -31,3 +31,58 @@
   background: $purple;
   color: white;
 }
+
+$duration: 2s;
+$delay: 1s;
+
+$initial-top: -20px;
+$initial-opacity: 0;
+
+$final-opacity: 1;
+$final-top: 0;
+
+@keyframes fadeInHome {
+  0% {
+    opacity: $initial-opacity;
+    top: $initial-top;
+  }
+
+  100% {
+    opacity: $final-opacity;
+    top: $final-top;
+  }
+}
+
+@-webkit-keyframes fadeInHome {
+  0% {
+    opacity: $initial-opacity;
+    top: $initial-top;
+  }
+
+  100% {
+    opacity: $final-opacity;
+    top: $final-top;
+  }
+}
+
+@-moz-keyframes fadeInHome {
+  0% {
+    opacity: $initial-opacity;
+    top: $initial-top;
+  }
+
+  100% {
+    opacity: $final-opacity;
+    top: $final-top;
+  }
+}
+
+
+.fadeInHome {
+  position: relative;
+  top: $initial-top;
+  opacity: $initial-opacity;
+  animation: fadeInHome $duration $delay ease forwards;
+  -webkit-animation: fadeInHome $duration $delay ease forwards;
+  -moz-animation: fadeInHome $duration $delay ease forwards;
+}
