@@ -25,7 +25,8 @@
             <span class="icon-bar"></span>
           </button>
           <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
+<!--             <%= image_tag 'logo.svg' %>
+ -->            <i class="fa fa-pencil"> The Pen</i>
           <% end %>
         </div>
 
@@ -57,5 +58,15 @@
     </nav>
 
     <%= yield %>
+    <div id="footer">
+  <ul class="list-inline">
+    <li><i class="fa fa-facebook"></i></li>
+    <li><i class="fa fa-twitter"></i></li>
+    <li><i class="fa fa-instagram"></i></li>
+    <li></li>
+  </ul>
+  <p>The One is a fictive product for a test at LeWagon.</p>
+  </div>
+
   </body>
 </html>
